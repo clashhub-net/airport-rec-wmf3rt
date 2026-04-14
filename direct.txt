@@ -1,0 +1,51 @@
+# 国内直连域名列表
+# ClashHub 国内流量直连规则
+
+# ——— 搜索引擎 ———
+||baidu.com^
+||s.baidu.com^
+||www.baidu.com^
+||zhihu.com^
+||so.com^
+||360.cn^
+||bing.com (部分直连)
+
+# ——— 电商 ———
+||taobao.com^
+||tmall.com^
+||jd.com^
+||1688.com^
+||pinduoduo.com^
+||alibaba.com^
+||alipay.com^
+||aliexpress.com^
+
+# ——— 社交 ———
+||qq.com^
+||wechat.com^
+||tencent.com^
+||weibo.com^
+||douyin.com^
+||bilibili.com^
+||xiaohongshu.com^
+
+# ——— 视频 ———
+||iqiyi.com^
+||youku.com^
+||qq.com/video^
+||mgtv.com^
+||bilibili.com^
+
+# ——— 银行/支付 ———
+||alipay.com^
+||pay.qq.com^
+||wallet.baidu.com^
+||pay.weixin.qq.com^
+
+# ——— 工具 ———
+||163.com^
+||126.com^
+||aliyun.com^
+||tencent-cloud.com^
+||dnspod.cn^
+||cloud.tencent.com^
