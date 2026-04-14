@@ -1,0 +1,74 @@
+# Clash 规则集 - ClashHub 2026-04-14
+# 使用方法: 将此URL填入 Clash 的 External Group (或其他规则 Providers)
+
+# ——— 分流规则 ———
+# 1. 广告拦截 (REJECT)
+# 2. 国内直连 (DIRECT)
+# 3. 国际代理 (PROXY)
+
+payload:
+  # 广告域名
+  - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,admob.com
+  - DOMAIN-SUFFIX,crashlytics.com
+  - DOMAIN-SUFFIX,unity3d.com/ads
+  - DOMAIN-SUFFIX,flurry.com
+  - DOMAIN-SUFFIX,mopub.com
+  - DOMAIN-SUFFIX,chartboost.com
+  - DOMAIN-SUFFIX,facebook.com/tr
+  - DOMAIN-SUFFIX,analytics.tiktok.com
+  - DOMAIN-SUFFIX,ads.moengage.com
+  - DOMAIN-SUFFIX,tracking
+
+  # 国内直连
+  - DOMAIN-SUFFIX,cn
+  - DOMAIN-SUFFIX,baidu.com
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,qq.com
+  - DOMAIN-SUFFIX,tencent.com
+  - DOMAIN-SUFFIX,alipay.com
+  - DOMAIN-SUFFIX,alibaba.com
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,163.com
+  - DOMAIN-SUFFIX,baike.baidu.com
+  - DOMAIN-KEYWORD,baidu
+  - DOMAIN-KEYWORD,alibaba
+  - DOMAIN-KEYWORD,tencent
+  - DOMAIN-KEYWORD,taobao
+
+  # 流媒体 — Netflix
+  - DOMAIN-KEYWORD,netflix
+  - DOMAIN-KEYWORD,nflxvideo
+  - DOMAIN,nflxso.net
+  - DOMAIN-SUFFIX,nflxvideo.net
+  - PROCESS-NAME,com.netflix.mediaclient
+
+  # 流媒体 — YouTube
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,.youtube.com
+  - DOMAIN-SUFFIX,ytimg.com
+
+  # 流媒体 — Disney+
+  - DOMAIN-KEYWORD,disney
+  - DOMAIN-SUFFIX,disney-plus.net
+  - DOMAIN-SUFFIX,bamgrid.com
+
+  # 流媒体 — Spotify
+  - DOMAIN-KEYWORD,spotify
+  - DOMAIN-SUFFIX,scdn.co
+
+  # 流媒体 — ChatGPT / OpenAI
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,ai.com
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+
+  # Telegram
+  - DOMAIN-SUFFIX,telegram.org
+  - IP-CIDR,91.108.56.0/22
+  - IP-CIDR,91.108.4.0/22
+  - IP-CIDR,149.154.160.0/20
+
+  # 默认: 走代理
+  - MATCH,PROXY
