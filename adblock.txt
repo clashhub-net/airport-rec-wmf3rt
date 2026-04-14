@@ -1,0 +1,42 @@
+# 广告+追踪器域名黑名单
+# ClashHub 广告过滤规则
+
+# Google 广告
+||googlesyndication.com^
+||googleadservices.com^
+||doubleclick.net^
+||admob.com^
+
+# Facebook/Meta 广告
+||facebook.com/tr^
+||connect.facebook.net^
+||pixel.facebook.com^
+
+# 国内广告平台
+||gdt.qq.com^
+||guang.qq.com^
+||ads.thsi.cn^
+
+# 分析追踪
+||analytics.google.com^
+||tracking.tiktok.com^
+||log.byteoversea.com^
+
+# 恶意域名
+||min-api.crowdstrike.com^
+||curlmyip.ca^
+
+# 广告关键词 (通配)
+.||admob.com^
+.||adsense.com^
+.||adsserver.com^
+.||adnxs.com^
+.||advertising.com^
+.||chartboost.com^
+.||unity3d.com/ads^
+.||mopub.com^
+.||inmobi.com^
+.||startappservice.com^
+.||applovin.com^
+.|| ironsource.com^
+.|| chartboost.com^
